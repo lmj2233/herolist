@@ -7,9 +7,24 @@ Vue.config.productionTip = false
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './assets/css/index.css'
 
+//1. 加载路由模块 VueRouter
+import VueRouter from 'vue-router'
+// 2.配置Vue的插件 VueRouter
+Vue.use(VueRouter) 
+
+// 3.配置路由规则
+const router = new VueRouter({
+  routes:[
+    // 4.配置路由
+   
+  ]
+})
 // 导入 HeroList 组件
-import HeroList from './views/heroes/HeroList.vue'
+// import HeroList from './views/heroes/HeroList.vue'
+
 
 new Vue({
   render: h => h(App),
+  // 配置路由对象 router
+  router,
 }).$mount('#app')
