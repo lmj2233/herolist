@@ -14,6 +14,8 @@ import EquipList from './views/equips/EquipList.vue'
 
 // 导入 HeroAdd 组件
 import HeroAdd from './views/heroes/HeroAdd.vue'
+// 导入 HeroEdit 组件
+import HeroEdit from './views/heroes/HeroEdit.vue'
 
 // 2.配置Vue的插件 VueRouter
 Vue.use(VueRouter) 
@@ -29,6 +31,8 @@ const router = new VueRouter({
    {name:'EquipList',path:'/equip',component:EquipList},
   //  因为路径少写了/hero，导致找不到add
    {name:'HeroAdd',path:'/hero/add',component:HeroAdd},
+  //  缺少传入的id
+   {name:'HeroEdit',path:'/hero/edit/:id',component:HeroEdit,props:true},
 
   ],
   // 精确类名

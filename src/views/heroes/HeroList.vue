@@ -19,9 +19,11 @@
             <td>{{ val.name }}</td>
             <td>{{ val.gender }}</td>
             <td>
-              <a href="edit.html">edit</a>
+              <!-- <a href="edit.html">edit</a> -->
+              <!-- <router-link :to="{name:'HeroEdit',params:{id:val.id}}">编辑</router-link> -->
+              <router-link :to="'/hero/edit/' + val.id">编辑</router-link>
               &nbsp;&nbsp;
-              <a href="javascript:" @click="del(val.id)">delete</a>
+              <a href="javascript:" @click="del(val.id)">删除</a>
             </td>
           </tr>
           
@@ -79,15 +81,14 @@ export default {
         if(status === 200){
           // 更新页面列表
           this.getData()
-          console.log(1)
         }
       })
       .catch((err) => {
         alert('系统错误'+err);
-        console.log(err)
       })
       }
-    }
+    },
+
   }
 };
 </script>
