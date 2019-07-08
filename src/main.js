@@ -7,6 +7,9 @@ Vue.config.productionTip = false
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './assets/css/index.css'
 
+// 导入 HeroList 组件
+import HeroList from './views/heroes/HeroList.vue'
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
