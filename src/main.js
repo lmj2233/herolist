@@ -21,8 +21,10 @@ const router = new VueRouter({
     // 4.配置路由
     {name:'home',path:'/',redirect:'/hero'},
    {name:'HeroList',path:'/hero',component:HeroList}
-  ]
+  ],
+  linkExactActiveClass:'active',
 })
+
 
 
 
