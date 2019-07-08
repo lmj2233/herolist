@@ -35,7 +35,7 @@ export default {
     },
     methods:{
         add(){
-            this.axios.post('http://localhost:3000/heroes',this.formData)
+            this.axios.post('heroes',this.formData)
             .then((res)=>{
                 // post指令：状态码201
                 if(res.status === 201){

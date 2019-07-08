@@ -41,7 +41,7 @@ export default {
     methods:{
         // 请求数据,渲染到页面
         reqData(){
-            this.axios.get(`http://localhost:3000/heroes/${this.id}`)
+            this.axios.get(`heroes/${this.id}`)
             .then((res)=>{
                 if(res.status ===200){
                     this.formData=res.data
@@ -54,7 +54,7 @@ export default {
         // 修改,提交数据
         update(){
           // id没有传递，找不到要修改的数据
-          this.axios.put(`http://localhost:3000/heroes/${this.id}`,this.formData)
+          this.axios.put(`heroes/${this.id}`,this.formData)
           .then((res)=>{
             // 跳转到英雄列表首页
               console.log(1)

@@ -10,6 +10,8 @@ import './assets/css/index.css'
 // 设置全局的axios
 // 挂载到Vue实例上,给Vue的构造函数增加成员 原型
 import axios from 'axios'
+// 配置baseURL
+axios.defaults.baseURL="http://localhost:3000/"
 Vue.prototype.axios= axios
 
 // 导入路由对象 router
