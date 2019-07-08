@@ -27,11 +27,6 @@
   ],
   "heroes": [
     {
-      "name": "马斯克",
-      "gender": "男",
-      "id": 6
-    },
-    {
       "name": "乔布斯",
       "gender": "男",
       "id": 7
@@ -40,16 +35,13 @@
       "name": "金星",
       "gender": "男",
       "id": 8
-    },
+    }
+  ],
+  "equips": [
     {
-      "name": "yyyy",
-      "gender": "男",
-      "id": 10
-    },
-    {
-      "name": "盖茨",
-      "gender": "男",
-      "id": 12
+      "name": "饮料",
+      "gn": "small",
+      "id": 1
     }
   ]
 }
