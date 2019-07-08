@@ -24,7 +24,7 @@
 </template>
 
 <script>
-linkExactActiveClass:'active'
+
 export default {};
 </script>
 
