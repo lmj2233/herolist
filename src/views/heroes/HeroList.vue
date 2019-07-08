@@ -35,7 +35,7 @@
 
 <script>
 // 引入 axios node_modules中的直接导入可以不写准确路径
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   data(){
@@ -50,7 +50,7 @@ export default {
   methods:{
     // 从db.json中获取数据
     getData(){
-      axios.get('http://localhost:3000/heroes')
+      this.axios.get('http://localhost:3000/heroes')
       .then((res)=>{
         // 解构赋值
         const { status , data }=res
@@ -72,7 +72,7 @@ export default {
       // }
       // 删除成功
       if(confirm('确定要删除吗？')){
-        axios.delete(`http://localhost:3000/heroes/${ID}`)
+        this.axios.delete(`http://localhost:3000/heroes/${ID}`)
       .then((res)=>{
         // console.log(res)
         // 解构赋值，单个数据要有.status
